@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Ana Toledo</title>
+    <meta description="WDD 131 - Dynamic Web Fundamentals - Ana Toledo - Week 01 About me page">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1> WDD 131 </h1>
+    <header>
+        <div class="header-content">
+            <h1> WDD 131: Dynamic Web Fundamentals - Ana Toledo</h1>
+            <nav>
+                <ul class="heading">
+                    <li><a href="www.linkedin.com/in/analautoledoz" title="Linkedln">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" title = "Canvas"> Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41" title = "Scripture"> Scripture</a></li>
+                    <li><a href = "#" title="Final Project">Final Project</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <section class="card">
+            <h2>About me</h2>
+            <div class="about-content">
+                <p>My name is Ana Laura and I go by Lau. I was born in Mexico and live with my family in CDMX. I am biomedical engineer but currently 
+                    I am studying software engineering degree. I like to learn new things, specially new languages! I am learning German and Japanese by my own, and I am taking English classes at college.
+                    My dream is travel around the world!🌍 </p>
+                <img src="/wdd131/images/profile-photo.jpg" alt="Profile photo" width="200">
+            </div>
+            <h3>Mexico City, Mexico</h3>
+            <hr>
+            <div class="location">
+                
+                <figure>
+                    <img src ="images/mexico-flag.svg" alt ="Mexico flag" width="200">
+                    <figcaption>Official Flag of Mexico</figcaption>
+                </figure>
+                  
+                <p>Mexico has the Gulf of Mexico, the ninth largest body of water in the world. It is one of the countries with the greatest biodiversity in the world. 
+                    Mariachi, the Voladores de Papantla, posadas and the Day of the Dead are some of the cultural expressions most associated with Mexico. 
+                    Mexican cuisine is a World Heritage Site. 
+                    In addition to the Spanish language, sixty-nine indigenous languages are spoken. 
+                    </p>    
+            </div>
+            
+        </section>
+        <section class="card2">
+            <h2>Web Dev Resources</h2>
+            <ul class="resources-list">
+                <li><a href="https://dev.to/" title= "Dev.to Community"> Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" title="Smashing Magazine">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" title="CSS Tricks">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" title="W3 Schools">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" title="Udemy">Udemy</a></li>
+                <li><a href="#" title="Image Placeholder">Image Placeholder</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p class="second-footer"><span id="lastModified"></span></p>
+    </footer>
     
 </body>
 </html>

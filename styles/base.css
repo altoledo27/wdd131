@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --header-color: #893E40;
+    --footer-color: #744253;
+    --main-color: #DB93B0;
+    --aside-color: #F7BFB4;
+    --navigation-color: #744F49;
+}
+body{
+    display: grid;
+    height: 100vh; 
+    font-family: "Host Grotesk", sans-serif;
+    
+ 
+}
+header
+{
+    background: var(--header-color);
+    grid-column: 1/4;
+    grid-row: 1;
+    height: 70px;
+    
+}
+.header-content
+{
+    background-color: var(--header-color);
+    font-family: "Stoke", serif;
+}
+h1{
+    padding: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color:#FFFF;
+}
+nav
+{
+    margin: 0 auto 2rem;
+	max-width: 100vw;
+}
+.heading
+{
+    list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--navigation-color);
+	align-items: center;
+}
+.heading li
+{
+    font-family: "Stoke", serif;
+    flex: 1 1 auto;
+    font-size: medium;
+}
+.heading a
+{
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: #FFFF;
+    text-decoration: none;
+}
+.heading a:hover
+{
+    text-decoration: overline;
+}
+main
+{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 20px;
+    padding: 10px;
+    width: 97vw;
+    margin-top: 20px;
+    margin-left: 1px;
+    
+}
+.card{
+    
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1.5rem;
+}
+.about-content img {
+    border-radius: 10px;
+}
+.about-content p{
+    font-size: medium;
+    text-align: justify;
+}
+figure{
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    padding: 0.5rem;
+}
+img{
+    border: 1px solid #ccc;
+}
+.card h2
+{
+    background: var(--main-color);
+    color: black;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    font-family: "Stoke", serif;
+}
+.card2 h2
+{
+    background: var(--aside-color);
+    padding: 10px;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    font-family: "Stoke", serif;
+}
+.card h3
+{
+    text-align: center;
+    font-family: "Stoke", serif;
+}
+hr{
+    width: 50%;
+    margin: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: gray;
+}
+
+.location {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+    text-align: justify;
+}
+.card2
+{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.card2 h2
+{
+    
+    font-size: 500;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.resources-list
+{
+    padding: 1rem;
+    font-size: small;
+    margin-top: 10rem;
+    margin-left: 2rem;
+
+}
+.resources-list li{
+    padding: 0.2rem;
+    font-size: medium;
+    font-family: "Work Sans", sans-serif;
+}
+footer
+{
+    grid-column: 1/4;
+    background-color: var(--footer-color);
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFFF;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    font-family: "Host Grotesk", sans-serif;
+}
+.second-footer{
+    font-size: medium;
+    color:#FDF1CE;
+}
+
+
+
