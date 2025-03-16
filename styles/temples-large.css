@@ -1,0 +1,40 @@
+/* Larger Views ******************************/
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav {
+        display: block !important; 
+    }
+    
+    .navigation{
+        display: flex !important;
+        justify-content: flex-end;
+        flex-direction: row !important;
+    }
+    nav a{
+        flex: 1 1 100%;
+    }
+    main{
+        max-width: 75vw;
+    
+    }
+    main h1{
+        padding:1rem;
+    }
+    
+    .temple-box{
+        display:grid; 
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+        grid-gap: 50px;
+        place-items: center;
+    }
+    #menu {
+		display: none;
+	}
+    
+    }
+    
+    
