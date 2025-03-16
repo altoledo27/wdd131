@@ -96,9 +96,8 @@ main{
 .temple-box figcaption{
     color: #3A4E48;
     font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
     font-weight: 900;
-    font-style: black;
+    font-style: bold;
 }
 
 footer
@@ -116,9 +115,8 @@ footer
 }
 .second-footer{
     font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
     font-weight: 900;
-    font-style: black;
+    font-style: bold;
     font-size: medium;
     color:#FDF1CE;
 }
