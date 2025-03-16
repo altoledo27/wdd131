@@ -100,7 +100,7 @@ main{
     color: #3A4E48;
     font-family: "Roboto Slab", serif;
     font-weight: 900;
-    font-style: bold;
+ 
 }
 
 footer
@@ -119,7 +119,6 @@ footer
 .second-footer{
     font-family: "Roboto Slab", serif;
     font-weight: 900;
-    font-style: bold;
     font-size: medium;
     color:#FDF1CE;
 }
