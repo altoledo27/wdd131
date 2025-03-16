@@ -51,7 +51,7 @@ header h1{
 }
 nav {
     display:none;
-	background-color: #6A7B76;
+
 }
 nav.open {
     display: block;
