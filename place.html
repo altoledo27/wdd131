@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Country Page</title>
+    <meta name ="description" content="Project from week 03, WDD 131: Dinamc Web. Responsive images, calculate Wind Chill with JS">
+    <meta name="author" content="Ana Laura Toledo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Japan
+        </h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-largee.webp" media = "(min-width: 1500px)"> 
+               <source srcset="images/hero-small.webp" media = "(max-width: 700px)"> 
+               <img src="images/hero-largee.webp" alt="Japan temple and woman" width="1500" height="750">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area: </strong>  377,975 km2</li>
+                <li><strong>Population:</strong> 123,440,000 </li>
+                <li><strong>Capital: </strong> Tokio</li>
+                <li><strong>Language: </strong> Japanese</li>
+                <li><strong>Currency: </strong> Japanese yen </li>
+                <li><strong>Time Zone:</strong> UTC+9:00 (JST)</li>
+                <li><strong>Calling Code:</strong> +81 </li>
+                <li><strong>Internet TLD:</strong> .jp </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon" width="150">
+            <ul>
+                <li><strong>Temperature: </strong>  13° C </li>
+                <li><strong>Conditions: </strong>Sunny </li>
+                <li><strong>Wind: </strong> 4.58 km/ h </li>
+                <li></li>
+            </ul>
+
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p class="second-footer"><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
