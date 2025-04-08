@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#temple-box img { 
+    width: 100%; 
+    height: auto; 
+    margin: .4rem;
+}
+main h2{
+    font-size:2.3rem;
+}
+
+
+/*mobile *********************************/
+header {
+	background-color: #3A4E48;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+ 
+
+}
+header,
+main {
+	margin: 0 auto;
+}
+header h1{
+    color: #fff;
+}
+#menu {
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: #FFFF;
+	position: absolute;
+	top: 1.3rem;
+	right: 0.7rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+nav {
+    display:none;
+
+}
+nav.open {
+    display: block;
+}
+.navigation{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul{
+    display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+.navigation a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+}
+.open a {
+	display: block;
+}
+
+
+#menu.open::before {
+	content: "X";
+}
+main{
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+#temple-box p{
+    color: #3A4E48;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+ 
+}
+
+footer
+{
+    padding: 1rem;
+    background-color: #190B28;
+    text-align: center;
+    color: #FFFF;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%; 
+}
+.second-footer{
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    font-size: medium;
+    color:#FDF1CE;
+}
+
