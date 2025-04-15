@@ -1,0 +1,182 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F3F0EB;
+}
+h1, h2{
+    font-family: "Fraunces", serif;
+    color:#FFFF;
+}
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #4056A1;
+    text-align: center;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    margin: 0 auto;
+}
+
+/*--------FORM STYLING------------*/
+.form1 fieldset {
+    margin: 1rem 0;
+    border: 3px solid #C5CBE3;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    margin-bottom: 1rem;
+}
+h2{
+    color:#504845;
+}
+
+
+
+.form1 label{
+    display: block;
+    padding-top: 1rem;
+    color: #DB9000;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.form1 div{
+    padding-top: 1rem;
+    color: #364987;
+    font-size: .9rem;
+    font-weight: 800;
+}
+
+.form1 input[type="text"],
+.form1 select,
+.form1 textarea,
+.form1 input[type="date"]{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    background-color: #FFFF;
+    display:block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 550px;
+    appearance: none;
+}
+
+.form1 input[type="checkbox"]{
+    margin-right:6px;
+    accent-color: #DB9000;
+}
+
+.form1 .check{
+    color: #504845;
+    font-weight: 450;
+}
+
+
+.star-rating {
+    margin-top:1rem;
+    display: flex;
+    align-items:baseline;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+  /* hide the inputs */
+  .star-rating input {
+    display:none;
+  }
+  /* set properties of all labels */
+  .star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+  }
+  /* give label a hover state */
+  .star-rating label:hover {
+    color: #ff69b4;
+    transition: 0.2s ease;
+  }
+  .star-rating label:active::before {
+    transform:scale(1.1);
+  }
+  
+  /* set shape of unselected label */
+  .star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+  }
+  /* set full star shape for checked label and those that come after it */
+  .star-rating input:checked ~ label:before {
+    content:'\2605';
+  }
+  
+  @-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+  }  
+  
+textarea {
+    height: 200px;         
+    resize: none;          
+    width: 100%; 
+    margin-bottom: 1rem;         
+  }
+
+.form1 input:required, .form1 option:required {
+    border-left: solid 8px #F13C20;
+}
+
+.form1 input:required:valid {
+    border-left: solid 8px #144F21;
+}
+
+.form1 input[type="submit"]{
+    text-align: center;
+    border: none;
+    font-family: "Fraunces", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background-image: linear-gradient(#4056A1, #DB9000);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+footer
+{
+    padding: 0.5rem;
+    background-color: #DB9000;
+    text-align: center;
+    color: #000;
+}
+.second-footer{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: medium;
+    color:#000;
+  }

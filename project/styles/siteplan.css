@@ -36,7 +36,7 @@ h1 {
 }
 
 h1,h2,h3 {
-  font-family: "Volkhov", serif;
+  font-family:"Fraunces", serif;
 }
 
 
@@ -80,8 +80,8 @@ p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
 }
-.volkhov{
-  font-family: "Volkhov", serif;
+.fraunces{
+  font-family:"Fraunces", serif;
   font-size: 1.3rem;
 }
 
