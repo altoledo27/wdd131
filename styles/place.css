@@ -81,17 +81,39 @@ hr{
 
 /* Larger Views ******************************/
 @media (min-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main {
+        height: 100%;
+    }
+    .container{
+        position: relative;
+        height: 100%;
 
+    }
     .hero{
         position: relative;
     }
-    .weather{
-        background-color: rgb(255, 255, 255, 0.7);
+
+    .hero img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    .weather, .data{
         position: absolute;
-        height: max-content;
-        width: 210px;
-        top: 85vh;
-        left: 82vw;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255, 0.7);
+    }
+    .weather{       
+        bottom: 50px;
+        right: 30px;
     }
     .weather ul{
         margin-top: 30px;
@@ -115,12 +137,9 @@ hr{
         content: " ☀️"; 
     }
     .data{
-        background-color: rgb(255, 255, 255, 0.7);
-        position: absolute;
-        height: max-content;
-        
-        top:25vh;
-        left: 5vw;
+        top: 40px;
+        left: 30px;
+
     }
     .data h2{
         background-color: rgb(92, 90, 74, 0.9);

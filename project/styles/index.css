@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --prussian-blue: #003366;
+    --carmine: #980716;
+    --gold: #D4AF37;
+    --light-steel-blue: #B0C4DE;
+    --ivory: #FFFFF0;
+    --vermilion: #E34234;
+    --forest-green: #228B22;
+    --charcoal: #333333;
+    --slate-gray: #708090;
+    --courses: #9A031E;
+    --grammar: #0C600B;
+    --media: #631D76;
+    --vocabulary: #1E56A4;
+    --test:#3B5249;
+    --teaching: #175C72;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--ivory);
+    color: var(--charcoal);
+}
+h1{
+    font-family:"Fraunces", serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+/*mobile *********************************/
+header {
+    font-family:"Fraunces", serif;
+	background-color: var(--prussian-blue);
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+    font-weight: 600;
+    
+}
+.logo img{
+    display:none;
+}
+header,
+main {
+	margin: 0 auto;
+}
+header h1{
+    color: #fff;
+}
+/*HAM MENU*/
+#menu {
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: #FFFF;
+	position: absolute;
+	top: 1.3rem;
+	right: 0.7rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+nav {
+    display:none;
+
+}
+nav.open {
+    display: block;
+}
+.navigation{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul{
+    display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+.navigation a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+}
+.open a {
+	display: block;
+}
+
+
+#menu.open::before {
+	content: "X";
+}
+.navigation button{
+    background-color: var(--gold);
+    font-family:"Fraunces", serif;
+    color: #00264D;
+    padding: 9px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    height: 40px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* End of HAM menu*/
+main{
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
+footer
+{
+    padding: 0.5rem;
+    background-color: var(--gold);
+    text-align: center;
+    color: #000;
+}
+.second-footer{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: medium;
+    color:#000;
+  }
+
+/*--- HOME PAGE CONFIGURATION ---*/
+/*- Hero configuration -*/
+  .word1, .word2, .word3{
+    padding: 0.2rem;
+    font-size: 2.6rem;
+    bottom: 4rem;
+    text-shadow: 1px 3px 5px var(--charcoal);
+    font-family:"Fraunces", serif;
+    font-weight: bold;
+}
+.hero-text{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.word1 {
+    color:var(--charcoal); 
+  }
+.word2 {
+    color:var(--carmine);
+  }
+.word3 {
+    color: var(--gold);
+    text-shadow: 1px 3px 5px var(--light-steel-blue);
+  }
+  
+  .hero-text h3{
+    font-size: 1rem;
+    color: var(--prussian-blue);
+
+  }
+#registerNow{
+    text-align: center;
+    border: none;
+    font-family: "Fraunces", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background-image: linear-gradient(#D4AF37, #003366);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 90%;
+    max-width: 150px;
+    margin-top:20px;
+    box-shadow: 1px 1px 4px #999;
+}  
+/* - Hero ends -*/
+
+/*--What will you find section configuration--*/
+.find {
+    margin: 5px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+.find-text h3, .curiosities h3{
+    font-family:"Fraunces", serif;
+    font-size: 1.7rem;
+    color: var(--prussian-blue);
+    padding: .2rem;
+}
+.find-text p, .curiosities p{
+    font-size: .9rem;
+    padding: 1rem;
+    color: var(--charcoal);
+
+}
+.find-menu{
+    display:flex;
+    justify-content: center;
+
+}
+  .find-courses {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .courses-section, 
+  .grammar-section, 
+  .media-library,
+  .vocabulary-section,
+  .quiz,
+  .teaching{
+    display:flex;
+    padding: 1rem;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+
+  }
+
+  .courses-section:hover,
+  .grammar-section:hover, 
+  .media-library:hover,
+  .vocabulary-section:hover,
+  .quiz:hover,
+  .teaching:hover 
+  {
+    transform: scale(1.05);
+  }
+  
+  #courses-section, 
+  #grammar-section, 
+  #media-library,
+  #vocabulary-section,
+  #quiz,
+  #teaching{
+    text-decoration: none;
+    color: var(--ivory);
+    
+  }
+  #courses-section h4, 
+  #grammar-section h4, 
+  #media-library h4,
+  #vocabulary-section h4,
+  #quiz h4,
+  #teaching h4 {
+    font-family:"Fraunces", serif;
+    font-size: 1.5rem;
+  }
+  #courses-section p, 
+  #grammar-section p, 
+  #media-library p,
+  #vocabulary-section p,
+  #quiz p,
+  #teaching p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+
+  .courses-section{
+    background-color: var(--courses);
+  }
+
+  .courses-section img{
+    width: 70px;
+    margin-bottom: .3rem;
+  }
+  .grammar-section{
+    background-color: var(--grammar);
+  }
+  .grammar-section img{
+    width: 60px;
+    margin-bottom: .3rem;
+  }
+  .media-library{
+    background-color: var(--media);
+  }
+  .media-library img{
+    width: 70px;
+    margin-bottom: .3rem;
+  }
+  .vocabulary-section{
+    background-color: var(--vocabulary);
+  }
+  .vocabulary-section img{
+    width: 70px;
+    margin-bottom: .3rem;
+  }
+.quiz{
+    background-color: var(--test);
+
+}
+.quiz img{
+    width: 70px;
+    margin-bottom: .3rem;
+
+}
+.teaching{
+    background-color: var(--teaching);
+
+}
+.teaching img{
+    width: 70px;
+    margin-bottom: .3rem;
+}
+
+  /*--What will you find section ends--*/
+
+  /*--Curiosity section configuration--*/
+
+  .curiosities {
+    margin: 5px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .curiosities h4{
+    font-family:"Fraunces", serif;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    color:var(--carmine);
+    font-weight: 700;
+  }
+  #curiosity-btn{
+    text-align: center;
+    border: none;
+    font-family: "Fraunces", serif;
+    font-size: .9rem;
+    font-weight: 700;
+    background-image: linear-gradient(#D4AF37, #003366);
+    color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 1px 1px 4px #999;
+} 
+
+  /*--Curiosity section end--*/

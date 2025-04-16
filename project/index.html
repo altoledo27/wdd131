@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | SprachSchatz: Learning German Online</title>
+    <meta name ="description" content="Main page for language learning resources. Contains a menu with all resource sections and a fun facts section.">
+    <meta name="author" content="Laura Toledo">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts//index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.webp" alt="SprachSchatz logo" width="60">
+            <h1>SprachSchatz</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href ="index.html" title="Home" id="home">Home</a></li>
+                <li><a href="#" title="Courses" id="courses">Courses</a></li>
+                <li><a href="grammar.html" title="Grammar" id="grammar">Grammar</a></li>
+                <li><a href="#" title="Vocabulary" id="vocabulary">Vocabulary</a></li>
+                <li><a href="contact-us.html" title="contact-us" id="contactUs">Contact us</a></li>
+                <button id="signUp">Sign up</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media = "(min-width: 1024px)"> 
+            <source srcset="images/hero-medium.webp" media = "(min-width: 600px)"> 
+            <img src="images/hero.webp" alt="Pirate learning german">
+            </picture>
+            <div class="hero-text">
+                <span class="word1">Learn</span>
+                <span class="word2">German</span>
+                <span class="word3">Now</span>
+                <h3>Everywhere, at any time and for free!</h3>
+                <button id="registerNow">Register now</button>
+            </div>
+        </div> 
+
+        <section class="find">
+            <div class="find-text">
+                <h3>What will you find here?</h3>
+                <p>Along with online courses, fun grammar tips, games, and cool videos, 
+                    you'll also find super useful info about living and working in Germany or Austria — plus tons of free teaching materials.
+                    It's your all-in-one spot to learn and explore German in a fun, practical way!</p>
+            </div>
+            <div class="find-menu">
+                <div class="find-courses">
+                    <div class="courses-section">
+                        <a href="#" title="Courses" id="courses-section">
+                            <img src="images/courses.svg" alt="Courses icon">
+                            <h4>Courses</h4>
+                            <p>Four comprehesive language courses at levels A1, A2, B1 and B2, with interactive excercises and audio-visual teaching materials</p>
+                        </a>
+                    </div>
+                    <div class="grammar-section">
+                        <a href="grammar.html" title="Grammar" id="grammar-section">
+                            <img src="images/grammar.svg" alt="Grammar icon">
+                            <h4>Grammar</h4>
+                            <p>The most important rules, with example sentences, for the correct usage of German grammar</p>
+                        </a>
+                    </div>
+                    <div class="media-library">
+                        <a href="#" title="Media" id="media-library">
+                            <img src="images/headphone.svg" alt="Media icon">
+                            <h4>Media library</h4>
+                            <p>Multimedia content: numerous authentic text as well as audio and visual material in German</p>
+                        </a>
+                    </div>
+                    <div class="vocabulary-section">
+                        <a href="#" title="Vocabulary" id="vocabulary-section">
+                            <img src="images/vocabulary.svg" alt="vocabulary icon">
+                            <h4>Vocabulary</h4>
+                            <p>Interactive cards with the most important words in German</p>
+                        </a>
+                    </div>
+                    <div class="quiz">
+                        <a href="#" title="Quiz" id="quiz">
+                            <img src="images/quiz.svg" alt="Quiz icon">
+                            <h4>Quiz</h4>
+                            <p>Playful knowledge test about history, culture, politics and society in German and Austria with authentic
+                                questions from citizenship test.
+                            </p>
+                        </a>
+
+                    </div>
+                    <div class="teaching">
+                        <a href="#" title="Teaching" id="teaching">
+                            <img src="images/teach.svg" alt="Teaching icon">
+                            <h4>Teaching materials</h4>
+                            <p>Free and creative teaching materials for German as foreign language and German as a second language.
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="curiosities">
+            <h3>Did you know?</h3>
+            <h4><span id="curiosity-title"></span></h4>
+            <p><span id="curiosity"></span></p>
+            <button id="curiosity-btn">Show me another curiosity!</button>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p class="second-footer"><span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

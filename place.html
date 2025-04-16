@@ -19,38 +19,42 @@
         </h1>
     </header>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-large.webp" media = "(min-width: 1500px)"> 
-               <source srcset="images/hero-small.webp" media = "(max-width: 700px)"> 
-               <img src="images/hero-large.webp" alt="Japan temple and woman" width="1500" height="750">
-            </picture>
-        </div>
-        <div class="data">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Area: </strong>  377,975 km2</li>
-                <li><strong>Population:</strong> 123,440,000 </li>
-                <li><strong>Capital: </strong> Tokio</li>
-                <li><strong>Language: </strong> Japanese</li>
-                <li><strong>Currency: </strong> Japanese yen </li>
-                <li><strong>Time Zone:</strong> UTC+9:00 (JST)</li>
-                <li><strong>Calling Code:</strong> +81 </li>
-                <li><strong>Internet TLD:</strong> .jp </li>
-            </ul>
-        </div>
-        <hr>
-        <div class="weather">
-            <h2>Weather</h2>
-            <img src="images/weather-icon.svg" alt="Weather Icon" width="150">
-            <ul>
-                <li><strong>Temperature: </strong>  13° C </li>
-                <li><strong>Conditions: </strong>Sunny </li>
-                <li><strong>Wind: </strong> 4.58 km/ h </li>
-                <li></li>
-            </ul>
-
-        </div>
+        <div class="container">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media = "(min-width: 1024px)"> 
+                   <source srcset="images/hero-small.webp" media = "(max-width: 700px)"> 
+                   <img src="images/hero-large.webp" alt="Japan temple and woman">
+                </picture>
+            </div>
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area: </strong>  377,975 km2</li>
+                    <li><strong>Population:</strong> 123,440,000 </li>
+                    <li><strong>Capital: </strong> Tokio</li>
+                    <li><strong>Language: </strong> Japanese</li>
+                    <li><strong>Currency: </strong> Japanese yen </li>
+                    <li><strong>Time Zone:</strong> UTC+9:00 (JST)</li>
+                    <li><strong>Calling Code:</strong> +81 </li>
+                    <li><strong>Internet TLD:</strong> .jp </li>
+                </ul>
+            </section>
+            <hr>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather Icon" width="150">
+                <ul>
+                    <li><strong>Temperature: </strong>  13° C </li>
+                    <li><strong>Conditions: </strong>Sunny </li>
+                    <li><strong>Wind: </strong> 4.58 km/ h </li>
+                    <li></li>
+                </ul>
+    
+            </div>
+        </section>
+        
+        
     </main>
     <footer>
         <p><span id="currentyear"></span></p>
