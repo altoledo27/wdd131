@@ -246,7 +246,12 @@ h3{
         justify-content: flex-end;
         flex-direction: row !important;
         align-items: center;
-        margin-left: auto;
+    }
+    .navigation ul{
+        display: flex !important;
+        justify-content: flex-end;
+        flex-direction: row !important;
+        align-items: center;
     }
     nav a{
         flex: 1 1 100%;

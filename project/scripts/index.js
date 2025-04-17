@@ -61,3 +61,17 @@ function showRandomCuriosity() {
 document.addEventListener("DOMContentLoaded", showRandomCuriosity);
 document.querySelector("#curiosity-btn").addEventListener("click", showRandomCuriosity);
 
+// get the number of visitors
+const visitsDisplay = document.querySelector(".visits");
+
+if (visitsDisplay) {
+    let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+    if (numVisits !== 0) {
+        visitsDisplay.textContent = `You are our visitor number ${numVisits + 1}. 🥳 Thank you!`;;
+    } else {
+        visitsDisplay.innerHTML = `<p>You are our first visitor. 🥳 Welcome!</p>`;
+    }
+    numVisits++;
+    localStorage.setItem("numVisits-ls", numVisits);
+}

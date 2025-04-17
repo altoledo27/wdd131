@@ -42,6 +42,12 @@
         flex-direction: row !important;
         align-items: center;
     }
+    .navigation ul{
+        display: flex !important;
+        justify-content: flex-end;
+        flex-direction: row !important;
+        align-items: center;
+    }
     nav a{
         flex: 1 1 100%;
     }
@@ -148,15 +154,16 @@
     /* Hero image ends */
 
     /*-- What will you find section configuration--*/
-    .find-text , .curiosities h3{
+    .find-text h3, .curiosities h3, .visitor h3{
         font-family:"Fraunces", serif;
         font-size: 3rem;
         color: var(--prussian-blue);
         padding: 1rem;
     }
-    .find-text p, .curiosities p{
+    .find-text p, .curiosities p, .visitor p{
         font-size: 1.2rem;
         padding: 1rem;
+        font-weight: 400;
         color: var(--charcoal);
 
     }
