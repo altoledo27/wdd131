@@ -58,16 +58,12 @@ const products = [
 ];
 
 
-const selectElement = document.querySelector("#productName");
+const productSelect = document.getElementById('product');
 
-if (selectElement) {
-products.forEach(product => {
-    const option = document.createElement("option");
-    option.textContent = product.name;
-    option.value = product.id;
   
-    selectElement.appendChild(option);
+products.forEach(product => {
+    const option = document.createElement('option');
+    option.value = product.id; 
+    option.textContent = product.name; 
+    productSelect.appendChild(option);
 });
-} else {
-    console.error("❌ No se encontró el elemento con id #productName");
-}
